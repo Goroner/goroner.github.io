@@ -13,7 +13,7 @@ markdown: kramdown
 
 sass:
   load_paths:
-    - styles
+  	- _sass
     - bower_components/bootstrap-sass/assets/stylesheets
 
 exclude: [node_modules, bower_components, package.json]
