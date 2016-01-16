@@ -11,4 +11,9 @@ url: "http://webjojo.net"
 # Build settings
 markdown: kramdown
 
-exclude: [node_modules, package.json]
+sass:
+  load_paths:
+    - styles
+    - bower_components/bootstrap-sass/assets/stylesheets
+
+exclude: [node_modules, bower_components, package.json]
