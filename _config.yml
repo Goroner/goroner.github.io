@@ -1,18 +1,27 @@
 # Site settings
 title: web JoJo
 email: stefan.mitev@webjojo.net
-description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: ""
+description: My personal blog
+baseurl: "/site"
 url: "http://goroner.github.io"
 
 # Build settings
 markdown: kramdown
 
-sass:
-  load_paths:
-    - bower_components/bootstrap-sass/assets/stylesheets
+gems: [jekyll-paginate]
 
-exclude: [node_modules, bower_components, package.json]
+sass:
+  # loading path from site root
+  # default to _sass
+  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+
+paginate: 5
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+
+exclude: [bower_components]

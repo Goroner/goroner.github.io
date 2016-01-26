@@ -4,18 +4,10 @@ layout: default
 
 <h1 class="page-heading">Latest</h1>
 
-<ul class="post-list">
-	{% if site.posts %}
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  {% else %}
-  	<p>No posts yet</p>
-  {% endif %}
-</ul>
+{% if site.posts %}
+  {% for post in site.posts %}
+    {% include post.html post=post %}
+  {% endfor %}
+{% else %}
+	<p>No posts yet</p>
+{% endif %}
