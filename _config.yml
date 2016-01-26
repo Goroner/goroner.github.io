@@ -2,7 +2,7 @@
 title: web JoJo
 email: stefan.mitev@webjojo.net
 description: My personal blog
-baseurl: "/site"
+baseurl: ""
 url: "http://goroner.github.io"
 
 # Build settings
