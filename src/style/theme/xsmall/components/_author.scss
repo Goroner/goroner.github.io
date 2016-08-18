@@ -1,0 +1,17 @@
+.author {
+	background: $color-primary;
+
+	@include element('social') {
+		a {
+			color: $color-white;
+
+			&:hover, &.active {
+				color: darken($color-white, 10%);
+			}
+		}
+	}
+
+	@include element('name') {
+		color: $color-white;
+	}
+}

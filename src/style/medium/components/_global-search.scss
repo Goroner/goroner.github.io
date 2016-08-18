@@ -1,0 +1,8 @@
+.global-search {
+  position: absolute;
+  padding-bottom: 5px;
+
+  @include element('input') {
+    width: 40%;
+  }
+}

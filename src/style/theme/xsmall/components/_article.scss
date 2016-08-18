@@ -1,0 +1,5 @@
+.article {
+	@include element('meta') {
+		color: $color-tapa;
+	}
+}

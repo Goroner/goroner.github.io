@@ -1,0 +1,10 @@
+.global-search {
+  background: $color-primary;
+  border-color: darken($color-primary, 10%);
+
+  @include element('input') {
+    border-color: $color-white;
+    color: $color-white;
+    background: transparent;
+  }
+}

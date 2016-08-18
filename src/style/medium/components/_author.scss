@@ -1,0 +1,36 @@
+.author {
+	margin: 0;
+	text-align: right;
+
+	@include element('social') {
+		margin-right: 0;
+		font-size: 25px;
+		line-height: 50px;
+	}
+
+	@include element('avatar'){
+		display: initial;
+		border-radius: 50%;
+		margin-bottom: 5px;
+
+		height: initial;
+	    width: auto;
+	    float: none;
+	    padding-top: 0;
+	    margin-left: 0;
+	}
+
+	@include element('name'){
+		display: block;
+		padding: 0;
+		float: none;
+	    font-size: initial;
+	    line-height: initial;
+	}
+
+	@include element('sub'){
+		display: block;
+		font-size: .8em;
+		font-style: italic;
+	}
+}
