@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("./fonts/icomoon.eot?gd39la");
+  src: url("./fonts/icomoon.eot?gd39la#iefix") format("embedded-opentype"), url("./fonts/icomoon.ttf?gd39la") format("truetype"), url("./fonts/icomoon.woff?gd39la") format("woff"), url("./fonts/icomoon.svg?gd39la#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .icon--folder:before {
+    content: "\e900"; }
+  .icon--tags:before {
+    content: "\e901"; }
+  .icon--calendar:before {
+    content: "\e902"; }
+  .icon--twitter:before {
+    content: "\e903"; }
+  .icon--github:before {
+    content: "\e904"; }
+  .icon--linkedin:before {
+    content: "\e905"; }
+
+body {
+  color: #333333; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #11C7D1; }
+  a:hover, a.active {
+    color: #0d9aa2; }
+
+.author {
+  background: #11C7D1; }
+  .author__social a {
+    color: #ffffff; }
+    .author__social a:hover, .author__social a.active {
+      color: #e6e6e6; }
+  .author__name {
+    color: #ffffff; }
+
+.article__meta {
+  color: #777777; }
+
+footer h3 {
+  background-color: #11C7D1; }
+
+footer a {
+  color: #ffffff; }
+  footer a:hover, footer a .active {
+    color: #ffffff; }
+
+.global-search {
+  background: #11C7D1;
+  border-color: #0d9aa2; }
+  .global-search__input {
+    border-color: #ffffff;
+    color: #ffffff;
+    background: transparent; }
+
+@media only screen and (min-width: 768px) {
+  .author {
+    background: none; }
+    .author__social a {
+      color: #11C7D1; }
+      .author__social a:hover, .author__social a.active {
+        color: #0d9aa2; }
+    .author__name {
+      color: #333333; }
+    .author__sub {
+      color: #777777; } }
