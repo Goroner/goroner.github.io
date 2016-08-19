@@ -9,7 +9,7 @@ build:
 
 deploy:
   steps:
-    - git-push:
+    - leipert/git-push:
          gh_oauth: $GH_TOKEN
          gh_pages: true
          gh_pages_domain: mitevs.github.com
