@@ -1,13 +1,6 @@
 footer {
 	h3 {
-		background-color: $color-primary;
-	}
-
-	a {
 		color: $color-white;
-
-		&:hover, .active {
-			color: $color-white;
-		}
+		background-color: $color-primary;
 	}
 }

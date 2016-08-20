@@ -1,0 +1,19 @@
+.tile {
+    padding: 0 10px;
+
+    @include modifier('half') {
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        
+        &:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    }
+}
+
+.tiles {
+    margin: 0 -10px;
+}

@@ -25,9 +25,14 @@ gulp.task('copy:scripts', function(){
 	.pipe(gulp.dest('./dist/scripts'));
 });
 
+gulp.task('copy:images', function(){
+	return gulp.src('./src/images/**/*')
+	.pipe(gulp.dest('./dist/images'));
+});
+
 gulp.task('views', function () {
   var templateData = {
-      version: package.version
+      year: new Date().getFullYear()
   },
   options = {
       batch : ['./src/partials']
@@ -40,4 +45,4 @@ gulp.task('views', function () {
       .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['sass', 'copy:scripts', 'copy:fonts', 'views']);
+gulp.task('default', ['sass', 'copy:scripts', 'copy:images', 'copy:fonts', 'views']);

@@ -1,0 +1,16 @@
+.tile {
+    margin-bottom: 40px;
+
+    @include element('title') {
+        margin: 0 0 10px;
+        border-bottom: 1px solid;
+
+        &> i {
+            margin-right: 10px;
+        }
+    }
+
+    @include element('content') {
+        margin: 0;
+    }
+}
