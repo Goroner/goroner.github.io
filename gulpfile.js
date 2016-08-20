@@ -20,6 +20,11 @@ gulp.task('copy:fonts', function(){
 	.pipe(gulp.dest('./dist/styles/fonts'));
 });
 
+gulp.task('copy:scripts', function(){
+	return gulp.src('./src/scripts/**/*.js')
+	.pipe(gulp.dest('./dist/scripts'));
+});
+
 gulp.task('views', function () {
   var templateData = {
       version: package.version
@@ -35,4 +40,4 @@ gulp.task('views', function () {
       .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['sass', 'copy:fonts', 'views']);
+gulp.task('default', ['sass', 'copy:scripts', 'copy:fonts', 'views']);
