@@ -391,13 +391,6 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'handlee';
-  src: url("./fonts/Handlee-Regular.eot");
-  src: url("./fonts/Handlee-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Handlee-Regular.woff") format("woff"), url("./fonts/Handlee-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
   font-family: 'droid'; }
 
@@ -405,8 +398,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'lato'; }
 
 footer h3 {
-  font-size: 15px;
-  font-family: 'handlee'; }
+  font-size: 14px;
+  font-weight: normal; }
 
 a {
   text-decoration: none; }
@@ -488,6 +481,16 @@ footer h3 {
     font-size: 17px;
     line-height: 17px; }
 
+.tile {
+  margin-bottom: 40px; }
+  .tile__title {
+    margin: 0 0 10px;
+    border-bottom: 1px solid; }
+    .tile__title > i {
+      margin-right: 10px; }
+  .tile__content {
+    margin: 0; }
+
 @media only screen and (min-width: 768px) {
   .container {
     padding-top: 70px; }
@@ -530,4 +533,16 @@ footer h3 {
     position: absolute;
     padding-bottom: 5px; }
     .global-search__input {
-      width: 40%; } }
+      width: 40%; }
+  .tile {
+    padding: 0 10px; }
+    .tile--half {
+      width: 50%;
+      box-sizing: border-box;
+      float: left; }
+      .tile--half:after {
+        display: block;
+        content: "";
+        clear: both; }
+  .tiles {
+    margin: 0 -10px; } }

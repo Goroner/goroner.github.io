@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("./fonts/icomoon.eot?gd39la");
-  src: url("./fonts/icomoon.eot?gd39la#iefix") format("embedded-opentype"), url("./fonts/icomoon.ttf?gd39la") format("truetype"), url("./fonts/icomoon.woff?gd39la") format("woff"), url("./fonts/icomoon.svg?gd39la#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?wn8rgh");
+  src: url("fonts/icomoon.eot?wn8rgh#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?wn8rgh") format("truetype"), url("fonts/icomoon.woff?wn8rgh") format("woff"), url("fonts/icomoon.svg?wn8rgh#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-.icon {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -17,21 +17,42 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .icon--folder:before {
-    content: "\e900"; }
-  .icon--tags:before {
-    content: "\e901"; }
-  .icon--calendar:before {
-    content: "\e902"; }
-  .icon--twitter:before {
-    content: "\e903"; }
-  .icon--github:before {
-    content: "\e904"; }
-  .icon--linkedin:before {
-    content: "\e905"; }
+
+.icon-user:before {
+  content: "\f007"; }
+
+.icon-twitter-square:before {
+  content: "\f081"; }
+
+.icon-cogs:before {
+  content: "\f085"; }
+
+.icon-gears:before {
+  content: "\f085"; }
+
+.icon-linkedin-square:before {
+  content: "\f08c"; }
+
+.icon-trophy:before {
+  content: "\f091"; }
+
+.icon-github-square:before {
+  content: "\f092"; }
+
+.icon-briefcase:before {
+  content: "\f0b1"; }
+
+.icon-graduation-cap:before {
+  content: "\f19d"; }
+
+.icon-mortar-board:before {
+  content: "\f19d"; }
+
+.icon-language:before {
+  content: "\f1ab"; }
 
 body {
-  color: #333333; }
+  color: #444444; }
 
 * {
   box-sizing: border-box; }
@@ -54,12 +75,8 @@ a {
   color: #777777; }
 
 footer h3 {
+  color: #ffffff;
   background-color: #11C7D1; }
-
-footer a {
-  color: #ffffff; }
-  footer a:hover, footer a .active {
-    color: #ffffff; }
 
 .global-search {
   background: #11C7D1;
@@ -69,6 +86,9 @@ footer a {
     color: #ffffff;
     background: transparent; }
 
+.tile__title {
+  border-color: #dddddd; }
+
 @media only screen and (min-width: 768px) {
   .author {
     background: none; }
@@ -77,6 +97,6 @@ footer a {
       .author__social a:hover, .author__social a.active {
         color: #0d9aa2; }
     .author__name {
-      color: #333333; }
+      color: #444444; }
     .author__sub {
       color: #777777; } }
