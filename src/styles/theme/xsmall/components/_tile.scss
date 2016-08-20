@@ -1,0 +1,9 @@
+.tile {
+    @include element('title') {
+        border-color: lighten($color-font, 60%);
+    }
+
+    @include element('content') {
+
+    }
+}

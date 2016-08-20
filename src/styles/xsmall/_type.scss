@@ -18,16 +18,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'handlee';
-	src: url('./fonts/Handlee-Regular.eot');
-	src: url('./fonts/Handlee-Regular.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Handlee-Regular.woff') format('woff'),
-		url('./fonts/Handlee-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 body {
 	font-family: 'droid';
 }
@@ -38,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
 	h3 {
-		font-size: 15px;
-		font-family: 'handlee';
+		font-size: 14px;
+		font-weight: normal;
 	}
 }
