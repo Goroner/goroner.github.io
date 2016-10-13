@@ -1,9 +1,5 @@
-var package = require('./package.json');
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var handlebars = require('gulp-compile-handlebars');
-var rename = require('gulp-rename');
-var htmlmin = require('gulp-htmlmin');
  
 gulp.task('sass', function () {
   return gulp.src('./src/styles/*.scss')
@@ -20,29 +16,14 @@ gulp.task('copy:fonts', function(){
 	.pipe(gulp.dest('./dist/styles/fonts'));
 });
 
-gulp.task('copy:scripts', function(){
-	return gulp.src('./src/scripts/**/*.js')
-	.pipe(gulp.dest('./dist/scripts'));
-});
-
 gulp.task('copy:images', function(){
 	return gulp.src('./src/images/**/*')
 	.pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('views', function () {
-  var templateData = {
-      year: new Date().getFullYear()
-  },
-  options = {
-      batch : ['./src/partials']
-  }
-
-  return gulp.src('./src/views/index.hbs')
-      .pipe(handlebars(templateData, options))
-      .pipe(rename('index.html'))
-      .pipe(htmlmin({collapseWhitespace: true}))
-      .pipe(gulp.dest('./dist/'));
+gulp.task('copy:html', function() {
+    return gulp.src('./src/**/*.html')
+	.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['sass', 'copy:scripts', 'copy:images', 'copy:fonts', 'views']);
+gulp.task('default', ['sass', 'copy:images', 'copy:fonts', 'copy:html']);

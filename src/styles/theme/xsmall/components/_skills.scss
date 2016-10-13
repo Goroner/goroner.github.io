@@ -1,0 +1,18 @@
+.skills {
+    .level-bar {
+        border-color: darken($color-primary, 5%);
+
+        @include element('indicator') {
+            background: $color-primary;
+            border-right-color: darken($color-primary, 5%);
+
+            label {
+                color: #fff;
+            }
+
+            @include modifier('full') {
+                border-right-color: transparent;
+            }
+        }
+    }
+}

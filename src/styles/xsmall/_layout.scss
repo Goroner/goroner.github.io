@@ -19,3 +19,20 @@ body {
 		clear: both;
 	}
 }
+
+.row {
+	margin: 0 -10px;
+	
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.col {
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
