@@ -4,7 +4,6 @@
   "description": "Personal Web Site",
   "author": "Stefan Mitev",
   "devDependencies": {
-    "gulp": "3.9.x",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-rename": "^1.2.2",

@@ -1,11 +1,58 @@
-'use strict';
+import React from 'react';
+import { render } from 'react-dom';
+import Spinner from './components/common/spinner';
+import Search from './components/page/search';
+import Author from './components/page/author';
+import Footer from './components/page/footer';
+import Columns from './components/containers/columns';
+import itemStore from './stores/impl/item';
 
-(function($){
-  $(window).on('keyup keydown', function(e){
-    if(e.ctrlKey && e.keyCode == 80){
-      e.preventDefault();
-      $('.global-search').addClass('global-search--active');
-      $('.global-search__input').focus();
-    } 
-  });
-}(jQuery));
+class Main extends React.Component {
+    render() {
+        var main;
+
+         if (this.state) {
+            main = <Columns single="true">{this.state.items}</Columns>;
+        } else {
+            main = <Spinner/>;
+        }
+
+        return (
+            <div id="page">
+                <div className="global-search">
+                    <Search/>
+                </div>
+                <div className="container">
+                    <div className="container__left">
+                        <aside>
+                            <Author/>
+                        </aside>
+                    </div>
+                        
+                    <div className="container__right">
+                        <main>{main}</main>
+                    </div>
+                </div>
+                <footer id="footer">
+                    <Footer/>
+                </footer>
+            </div>
+        );
+    }
+
+    componentDidMount() {
+        itemStore.addChangeListener(this._onItemStoreChange.bind(this));
+    }
+
+    componentWillUnmount() {
+        itemStore.removeChangeListener(this._onItemStoreChange);
+    }
+
+    _onItemStoreChange() {
+        this.setState({
+            items: itemStore.getItems()
+        });
+    }
+}
+
+render(<Main/>, document.getElementById('app'));

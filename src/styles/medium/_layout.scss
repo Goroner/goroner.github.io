@@ -14,3 +14,11 @@
 		width: 75%;
 	}
 }
+
+.col {
+	width: 50%;
+
+	@include modifier('full') {
+		width: 100%;
+	}
+}
