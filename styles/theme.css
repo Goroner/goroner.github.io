@@ -89,6 +89,19 @@ footer h3 {
 .tile__title {
   border-color: #dddddd; }
 
+.skills .level-bar {
+  border-color: #8fb109; }
+  .skills .level-bar__indicator {
+    background: #A3C90A;
+    border-right-color: #8fb109; }
+    .skills .level-bar__indicator label {
+      color: #fff; }
+    .skills .level-bar__indicator--full {
+      border-right-color: transparent; }
+
+.spinner > div {
+  background-color: #A3C90A; }
+
 @media only screen and (min-width: 768px) {
   .author {
     background: none; }

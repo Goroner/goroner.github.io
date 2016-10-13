@@ -377,6 +377,19 @@ body {
     content: "";
     clear: both; }
 
+.row {
+  margin: 0 -10px; }
+  .row:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.col {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: 'droid';
   src: url("./fonts/DroidSans-webfont.eot");
@@ -403,6 +416,9 @@ footer h3 {
 
 a {
   text-decoration: none; }
+
+.widget {
+  margin-bottom: 30px; }
 
 .author {
   margin: 0 -25px 50px;
@@ -491,6 +507,69 @@ footer h3 {
   .tile__content {
     margin: 0; }
 
+.skills > h2 {
+  margin: 0 0 10px; }
+
+.skills__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .skills__list li {
+    margin-bottom: 10px; }
+    .skills__list li h4 {
+      margin: 0; }
+
+.skills .level-bar {
+  border-radius: 3px;
+  height: 23px;
+  border-style: solid;
+  border-width: 1px;
+  position: relative; }
+  .skills .level-bar__indicator {
+    height: 100%;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding-left: 10px; }
+    .skills .level-bar__indicator label {
+      font-size: 14px;
+      position: absolute;
+      height: 100%; }
+    .skills .level-bar__indicator--full {
+      border-right-style: none;
+      border-right-width: initial; }
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center; }
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s; }
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s; }
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 @media only screen and (min-width: 768px) {
   .container {
     padding-top: 70px; }
@@ -503,6 +582,10 @@ footer h3 {
     .container__right {
       float: left;
       width: 75%; }
+  .col {
+    width: 50%; }
+    .col--full {
+      width: 100%; }
   .author {
     margin: 0;
     text-align: right; }
