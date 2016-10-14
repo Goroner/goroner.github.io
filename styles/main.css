@@ -390,6 +390,12 @@ body {
   padding: 0 10px;
   box-sizing: border-box; }
 
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
 @font-face {
   font-family: 'droid';
   src: url("./fonts/DroidSans-webfont.eot");
@@ -509,6 +515,8 @@ footer h3 {
 
 .skills > h2 {
   margin: 0 0 10px; }
+  .skills > h2 > i {
+    font-size: 20px; }
 
 .skills__list {
   list-style: none;

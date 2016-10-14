@@ -23414,7 +23414,8 @@
 	                _react2.default.createElement(
 	                    "h2",
 	                    null,
-	                    "Skills"
+	                    _react2.default.createElement("i", { className: "icon-tasks" }),
+	                    " Skills"
 	                ),
 	                _react2.default.createElement(
 	                    "ul",
@@ -23427,15 +23428,9 @@
 	        key: "_renderSkills",
 	        value: function _renderSkills() {
 	            return this.props.skills.map(function (skill) {
-	                var conditionalClasses = [];
-
 	                var levelBarStyle = {
 	                    width: skill.level + '%'
 	                };
-
-	                if (skill.level === 100) {
-	                    conditionalClasses.push('level-bar__indicator--full');
-	                }
 
 	                return _react2.default.createElement(
 	                    "li",
@@ -23445,7 +23440,7 @@
 	                        { className: "level-bar" },
 	                        _react2.default.createElement(
 	                            "div",
-	                            { className: "level-bar__indicator {conditionalClasses.join(' ')}", style: levelBarStyle },
+	                            { className: "level-bar__indicator {skill.level === 100 ? 'level-bar__indicator--full' : ''}", style: levelBarStyle },
 	                            _react2.default.createElement(
 	                                "label",
 	                                null,

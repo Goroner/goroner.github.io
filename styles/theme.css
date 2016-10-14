@@ -1,11 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?wn8rgh");
-  src: url("fonts/icomoon.eot?wn8rgh#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?wn8rgh") format("truetype"), url("fonts/icomoon.woff?wn8rgh") format("woff"), url("fonts/icomoon.svg?wn8rgh#icomoon") format("svg");
+  src: url("fonts/icomoon.ttf?75qs9h") format("truetype"), url("fonts/icomoon.woff?75qs9h") format("woff"), url("fonts/icomoon.svg?75qs9h#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-[class^="icon-"], [class*=" icon-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -18,38 +18,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-user:before {
-  content: "\f007"; }
-
 .icon-twitter-square:before {
-  content: "\f081"; }
-
-.icon-cogs:before {
-  content: "\f085"; }
-
-.icon-gears:before {
-  content: "\f085"; }
+  content: ""; }
 
 .icon-linkedin-square:before {
-  content: "\f08c"; }
-
-.icon-trophy:before {
-  content: "\f091"; }
+  content: ""; }
 
 .icon-github-square:before {
-  content: "\f092"; }
+  content: ""; }
 
-.icon-briefcase:before {
-  content: "\f0b1"; }
-
-.icon-graduation-cap:before {
-  content: "\f19d"; }
-
-.icon-mortar-board:before {
-  content: "\f19d"; }
-
-.icon-language:before {
-  content: "\f1ab"; }
+.icon-tasks:before {
+  content: ""; }
 
 body {
   color: #444444; }
@@ -92,7 +71,14 @@ footer h3 {
 .skills .level-bar {
   border-color: #8fb109; }
   .skills .level-bar__indicator {
-    background: #A3C90A;
+    background-color: #9fc40a;
+    /* Fallback */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A3C90A), to(#9bbf0a));
+    background-image: -webkit-linear-gradient(top, #A3C90A, #9bbf0a);
+    background-image: -moz-linear-gradient(top, #A3C90A, #9bbf0a);
+    background-image: -ms-linear-gradient(top, #A3C90A, #9bbf0a);
+    background-image: -o-linear-gradient(top, #A3C90A, #9bbf0a);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#A3C90A', EndColorStr='#9bbf0a')";
     border-right-color: #8fb109; }
     .skills .level-bar__indicator label {
       color: #fff; }
