@@ -6,6 +6,11 @@ module.exports = {
   output: {
     filename: 'dist/scripts/bundle.js'
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react'
+    })
+  ],
   module: {
     loaders: [
       {

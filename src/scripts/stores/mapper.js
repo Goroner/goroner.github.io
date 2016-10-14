@@ -1,15 +1,17 @@
 import React from 'react';
 
 import Columns from '../components/containers/columns';
-import Content from '../components/content';
-import Skills from '../components/skills';
-import Experience from '../components/experience';
+import Content from '../components/widgets/content';
+import Skills from '../components/widgets/skills';
+import Experience from '../components/widgets/experience';
 
 export default {
     map(items) {
-        return items.map(item => {
-            return this._getComponent(item);
-        });
+        if (items) {
+            return items.map(item => {
+                return this._getComponent(item);
+            });
+        }
     },
     _getComponent(item) {
         switch(item.type) {

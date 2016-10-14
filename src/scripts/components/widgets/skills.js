@@ -1,12 +1,15 @@
-import React from 'react';
+import Widget from './base';
 
-class Skills extends React.Component {
+class Skills extends Widget {
+    constructor() {
+        super();
+        this.icon = 'tasks';
+        this.title = 'Skills'
+    }
+    
     render() {
-        return (
-            <div className="skills widget">
-                <h2><i className="icon-tasks"></i> Skills</h2>
-                <ul className="skills__list">{this._renderSkills()}</ul>
-            </div>
+        return super.render(
+            <ul className="skills__list">{this._renderSkills()}</ul>
         );
     }
 
@@ -19,7 +22,7 @@ class Skills extends React.Component {
             return (
                 <li key={skill.id}>
                     <div className="level-bar">
-                        <div className="level-bar__indicator {skill.level === 100 ? 'level-bar__indicator--full' : ''}" style={levelBarStyle}>
+                        <div className={'level-bar__indicator' + (skill.level === 100 ? ' level-bar__indicator--full' : '')} style={levelBarStyle}>
                             <label>{skill.name}</label>
                         </div>
                     </div>
