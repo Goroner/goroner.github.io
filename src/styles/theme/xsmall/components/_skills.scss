@@ -3,7 +3,7 @@
         border-color: darken($color-primary, 5%);
 
         @include element('indicator') {
-            background: $color-primary;
+            @include gradient($color-primary, darken($color-primary, 2%));
             border-right-color: darken($color-primary, 5%);
 
             label {
