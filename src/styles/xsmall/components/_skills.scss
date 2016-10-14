@@ -1,6 +1,10 @@
 .skills {
     > h2 {
         margin: 0 0 10px;
+
+        > i {
+            font-size: 20px;
+        }
     }
 
     @include element('list') {
