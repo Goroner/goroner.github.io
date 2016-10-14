@@ -425,6 +425,10 @@ a {
 
 .widget {
   margin-bottom: 30px; }
+  .widget__title {
+    margin: 0 0 10px; }
+    .widget__title > i {
+      font-size: 20px; }
 
 .author {
   margin: 0 -25px 50px;
@@ -513,19 +517,12 @@ footer h3 {
   .tile__content {
     margin: 0; }
 
-.skills > h2 {
-  margin: 0 0 10px; }
-  .skills > h2 > i {
-    font-size: 20px; }
-
 .skills__list {
   list-style: none;
   padding: 0;
   margin: 0; }
   .skills__list li {
     margin-bottom: 10px; }
-    .skills__list li h4 {
-      margin: 0; }
 
 .skills .level-bar {
   border-radius: 3px;
@@ -591,9 +588,11 @@ footer h3 {
       float: left;
       width: 75%; }
   .col {
-    width: 50%; }
+    width: 60%; }
     .col--full {
       width: 100%; }
+  .col + .col {
+    width: 40%; }
   .author {
     margin: 0;
     text-align: right; }
