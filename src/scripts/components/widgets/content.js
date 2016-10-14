@@ -1,8 +1,8 @@
-import React from 'react';
+import Widget from './base';
 
-class Content extends React.Component {
+class Content extends Widget {
     render () {
-        return (
+        return super.render(
             <div className="content widget">{this.props.content.text}</div>
         );
     }

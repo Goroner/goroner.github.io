@@ -16,9 +16,13 @@
 }
 
 .col {
-	width: 50%;
+	width: 60%;
 
 	@include modifier('full') {
 		width: 100%;
 	}
+}
+
+.col + .col {
+	width: 40%;
 }

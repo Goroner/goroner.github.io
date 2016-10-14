@@ -1,3 +1,11 @@
 .widget {
     margin-bottom: 30px;
+
+    @include element('title') {
+        margin: 0 0 10px;
+
+        > i {
+            font-size: 20px;
+        }
+    }
 }

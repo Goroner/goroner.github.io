@@ -6,8 +6,13 @@ module.exports = {
   output: {
     filename: 'dist/scripts/bundle.js'
   },
-  module: {
-    loaders: [
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react'
+    })
+  ],
+  module: {
+    loaders: [
       {
         test: /\.json$/,
         loader: 'json-loader'
