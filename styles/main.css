@@ -368,11 +368,11 @@ body {
   position: relative;
   padding-bottom: 70px; }
 
-.container {
+.page {
   padding: 0 25px 25px;
   max-width: 1140px;
   margin: 0 auto; }
-  .container:before, .container:after {
+  .page:before, .page:after {
     display: table;
     content: "";
     clear: both; }
@@ -426,7 +426,7 @@ a {
 .widget {
   margin-bottom: 30px; }
   .widget__title {
-    margin: 0 0 10px; }
+    margin: 0 0 20px; }
     .widget__title > i {
       font-size: 20px; }
 
@@ -575,16 +575,41 @@ footer h3 {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
+.experience__item {
+  margin-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed; }
+  .experience__item:last-child {
+    border-bottom: 0; }
+
+.experience__title {
+  margin: 0 0 5px; }
+
+.experience__company {
+  margin: 0 0 10px; }
+
+.experience__details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  font-size: 14px; }
+  .experience__details li {
+    display: inline-block;
+    width: 50%; }
+
+.experience__desc {
+  margin: 0 0 20px; }
+
 @media only screen and (min-width: 768px) {
-  .container {
+  .page {
     padding-top: 70px; }
-    .container__left {
+    .page__left {
       display: block;
       float: left;
       width: 25%;
       padding-right: 50px;
       box-sizing: border-box; }
-    .container__right {
+    .page__right {
       float: left;
       width: 75%; }
   .col {

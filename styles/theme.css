@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.ttf?75qs9h") format("truetype"), url("fonts/icomoon.woff?75qs9h") format("woff"), url("fonts/icomoon.svg?75qs9h#icomoon") format("svg");
+  src: url("fonts/icomoon.ttf?sw6k8j") format("truetype"), url("fonts/icomoon.woff?sw6k8j") format("woff"), url("fonts/icomoon.svg?sw6k8j#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -18,6 +18,12 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-map-marker:before {
+  content: ""; }
+
+.icon-calendar:before {
+  content: ""; }
+
 .icon-twitter-square:before {
   content: ""; }
 
@@ -30,8 +36,12 @@ i {
 .icon-tasks:before {
   content: ""; }
 
+.icon-suitcase:before {
+  content: ""; }
+
 body {
-  color: #444444; }
+  color: #444444;
+  font-size: .95em; }
 
 * {
   box-sizing: border-box; }
@@ -87,6 +97,15 @@ footer h3 {
 
 .spinner > div {
   background-color: #A3C90A; }
+
+.experience__item {
+  border-bottom-color: #ccc; }
+
+.experience__company {
+  color: #888; }
+
+.experience__details {
+  color: #888; }
 
 @media only screen and (min-width: 768px) {
   .author {
