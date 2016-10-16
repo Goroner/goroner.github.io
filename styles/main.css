@@ -462,6 +462,8 @@ a {
     margin: 0; }
   .author__sub {
     display: none; }
+  .author__build {
+    display: none; }
 
 .article {
   margin-bottom: 40px; }
@@ -644,6 +646,8 @@ footer h3 {
       display: block;
       font-size: .8em;
       font-style: italic; }
+    .author__build {
+      display: block; }
   .global-search {
     position: absolute;
     padding-bottom: 5px; }

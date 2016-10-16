@@ -21717,7 +21717,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    "div",
-	                    null,
+	                    { className: "author__build" },
 	                    _react2.default.createElement(
 	                        "a",
 	                        { href: "https://app.wercker.com/project/byKey/5b9af48dbd6c03ca26513319ffcd5b09" },
