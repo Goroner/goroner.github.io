@@ -596,8 +596,7 @@ footer h3 {
   margin: 0 0 10px;
   font-size: 14px; }
   .experience__details li {
-    display: inline-block;
-    width: 50%; }
+    margin-bottom: 5px; }
 
 .experience__desc {
   margin: 0 0 20px; }
@@ -664,4 +663,8 @@ footer h3 {
         content: "";
         clear: both; }
   .tiles {
-    margin: 0 -10px; } }
+    margin: 0 -10px; }
+  .experience__details li {
+    display: inline-block;
+    width: 50%;
+    margin: 0; } }
