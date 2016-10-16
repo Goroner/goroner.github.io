@@ -37,4 +37,8 @@
 	@include element('sub'){
 		display: none;
 	}
+
+	@include element('build') {
+		display: none;
+	}
 }
