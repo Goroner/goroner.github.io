@@ -21843,13 +21843,17 @@
 	        value: function render() {
 	            var _this2 = this;
 
-	            return _get(Columns.prototype.__proto__ || Object.getPrototypeOf(Columns.prototype), 'render', this).call(this, this.eachArea(function (children, index) {
-	                return React.createElement(
-	                    'div',
-	                    { key: 'area_' + index, className: 'col' + (_this2.props.single ? ' col--full' : '') },
-	                    children
-	                );
-	            }));
+	            return _get(Columns.prototype.__proto__ || Object.getPrototypeOf(Columns.prototype), 'render', this).call(this, React.createElement(
+	                'div',
+	                { className: 'row' },
+	                this.eachArea(function (children, index) {
+	                    return React.createElement(
+	                        'div',
+	                        { key: 'area_' + index, className: 'col' + (_this2.props.single ? ' col--full' : '') },
+	                        children
+	                    );
+	                })
+	            ));
 	        }
 	    }]);
 
