@@ -4,6 +4,7 @@ class Experience extends Widget {
     constructor() {
         super();
         this.title = 'Experience';
+        this.icon = 'suitcase';
     }
 
     render() {
@@ -17,13 +18,13 @@ class Experience extends Widget {
             this.props.items.forEach(item => {
                 items.push(
                     <div key={'exp_' + item.id} className="experience__item">
-                        <h3>{item.title}</h3>
-                        <p>{item.company}</p>
-                        <div>
-                            <div><i></i> {item.dates}</div>
-                            <div><i></i> {item.location}</div>
-                        </div>
-                        <p>{item.description}</p>
+                        <h4 className="experience__title">{item.title}</h4>
+                        <h5 className="experience__company">{item.company}</h5>
+                        <ul className="experience__details">
+                            <li><i className="icon-calendar"></i> <time>{item.dates}</time></li>
+                            <li><i className="icon-map-marker"></i> {item.location}</li>
+                        </ul>
+                        <p className="experience__desc">{item.description}</p>
                     </div>
                 );
             });

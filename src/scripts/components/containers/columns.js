@@ -1,29 +1,10 @@
-import React from 'react';
+import Container from './base';
 
-class Columns extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    
+class Columns extends Container {
     render () {
-        var cols = [];
-
-        if (this.props.single) {
-            cols.push(<div key={'area_0'} className="col col--full">{this._getChildrenForArea(0)}</div>);
-        } else {
-            cols.push(<div key={'area_0'} className="col">{this._getChildrenForArea(0)}</div>);
-            cols.push(<div key={'area_1'} className="col">{this._getChildrenForArea(1)}</div>);
-        }
-
-        return <div className="row">{cols}</div>;
-    }
-
-     _getChildrenForArea(area) {
-        return React.Children.map(this.props.children, child => {
-            if (child.props.area === area) {
-                return child;
-            }
-        });
+        return super.render(this.eachArea((children, index) => {
+            return <div key={'area_' + index} className={'col' + (this.props.single ? ' col--full': '')}>{children}</div>;
+        }));
     }
 }
 

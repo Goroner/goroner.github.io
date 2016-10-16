@@ -1,0 +1,35 @@
+.experience {
+    @include element('item') {
+        margin-bottom: 20px;
+        border-bottom-width:1px;
+        border-bottom-style: dashed;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    @include element('title') {
+        margin: 0 0 5px;
+    }
+
+    @include element('company') {
+        margin: 0 0 10px;
+    }
+
+    @include element('details') {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px;
+        font-size: 14px;
+
+        li {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    @include element('desc') {
+        margin: 0 0 20px;
+    }
+}

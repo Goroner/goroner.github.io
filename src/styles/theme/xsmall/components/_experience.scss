@@ -1,0 +1,13 @@
+.experience {
+    @include element('item') {
+        border-bottom-color: #ccc;
+    }
+
+    @include element('company') {
+        color: #888;
+    }
+
+    @include element('details') {
+        color: #888;
+    }
+}

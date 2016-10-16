@@ -18,18 +18,18 @@ class Main extends React.Component {
         }
 
         return (
-            <div id="page">
+            <div id="app">
                 <div className="global-search">
                     <Search/>
                 </div>
-                <div className="container">
-                    <div className="container__left">
+                <div className="page">
+                    <div className="page__left">
                         <aside>
                             <Author/>
                         </aside>
                     </div>
                         
-                    <div className="container__right">
+                    <div className="page__right">
                         <main>{main}</main>
                     </div>
                 </div>
