@@ -19,22 +19,9 @@
             "children": [
                 {
                     "id": 3,
-                    "type": "skills",
-                    "props": {
-                        "area": 0
-                    },
-                    "data": [
-                        {"id": 1, "name": "Java EE", "level": 70},
-                        {"id": 2, "name": "JavaScript", "level": 90},
-                        {"id": 3, "name": "HTML", "level": 90},
-                        {"id": 4, "name": "CSS", "level": 90}
-                    ]
-                },
-                {
-                    "id": 4,
                     "type": "experience",
                     "props": {
-                        "area": 1
+                        "area": 0
                     },
                     "data": [
                         {   
@@ -44,7 +31,28 @@
                             "dates": "Jan 2014 - Dec 2015",
                             "location": "Skopje, Macedonia",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora voluptatibus qui necessitatibus sint ea rerum, quod deleniti libero doloremque voluptates, quo iusto, officiis odio cupiditate excepturi deserunt! Animi eos nulla illo id, voluptates deserunt quaerat quam distinctio tempora. Eius fuga dignissimos, earum doloremque soluta dolores vitae temporibus, dicta ab."
+                        },
+                        {   
+                            "id": 2,
+                            "title": "Full-Stack Developer", 
+                            "company": "ITgma", 
+                            "dates": "Jan 2014 - Dec 2015",
+                            "location": "Skopje, Macedonia",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora voluptatibus qui necessitatibus sint ea rerum, quod deleniti libero doloremque voluptates, quo iusto, officiis odio cupiditate excepturi deserunt! Animi eos nulla illo id, voluptates deserunt quaerat quam distinctio tempora. Eius fuga dignissimos, earum doloremque soluta dolores vitae temporibus, dicta ab."
                         }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "type": "skills",
+                    "props": {
+                        "area": 1
+                    },
+                    "data": [
+                        {"id": 1, "name": "Java EE", "level": 70},
+                        {"id": 2, "name": "JavaScript", "level": 90},
+                        {"id": 3, "name": "HTML", "level": 90},
+                        {"id": 4, "name": "CSS", "level": 90}
                     ]
                 }
             ]

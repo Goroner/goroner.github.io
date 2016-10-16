@@ -3,9 +3,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('#{$icomoon-font-path}/icomoon.ttf?75qs9h') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?75qs9h') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?75qs9h#icomoon') format('svg');
+    url('#{$icomoon-font-path}/icomoon.ttf?sw6k8j') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?sw6k8j') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?sw6k8j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-map-marker {
+  &:before {
+    content: $icon-map-marker;
+  }
+}
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
 .icon-twitter-square {
   &:before {
     content: $icon-twitter-square;
@@ -43,5 +53,10 @@ i {
 .icon-tasks {
   &:before {
     content: $icon-tasks;
+  }
+}
+.icon-suitcase {
+  &:before {
+    content: $icon-suitcase;
   }
 }
