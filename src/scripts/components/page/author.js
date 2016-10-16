@@ -26,6 +26,14 @@ class Author extends React.Component {
                         </a>
                     </li>
                 </ul>
+
+                <div>
+                    <a href="https://app.wercker.com/project/byKey/5b9af48dbd6c03ca26513319ffcd5b09">
+                        <img alt="Wercker status" src="https://app.wercker.com/status/5b9af48dbd6c03ca26513319ffcd5b09/s/"/>
+                    </a>
+                    <br/>
+                    <em><small>ci by <a href="http://wercker.com">wercker</a></small></em>
+                </div>
             </section>
         );
     }
