@@ -4,10 +4,11 @@
             "id" : 1,
             "type" : "content",
             "props" : {
-                "area" : 0
+                "area" : 0,
+                "type": "md"
             },
             "data" : {
-                "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora voluptatibus qui necessitatibus sint ea rerum, quod deleniti libero doloremque voluptates, quo iusto, officiis odio cupiditate excepturi deserunt! Animi eos nulla illo id, voluptates deserunt quaerat quam distinctio tempora. Eius fuga dignissimos, earum doloremque soluta dolores vitae temporibus, dicta ab."
+                "text" : "Stefan Mitev is a software engineer with solid foundation in computer science and engineering. Understanding and applying best-practices, abstractions and concepts are key to his success in building and maintaining highly effective software systems. Besides formal becholors education, Stefan is constantly upgrading his knowledge to follow-up with the latest and gratest technologies and practices in the vast and ever-changing IT landscape. This page is self-contained CV and show-case of the experience and skill-set that Stefan owns in his lifetime to date. If you are technical and want to peek behind the scenes, you can take a look at the source-code for this site [here](https://github.com/mitevs/mitevs.github.io/tree/dev)."
             }
         },
         {
