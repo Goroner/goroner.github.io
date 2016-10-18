@@ -17,24 +17,24 @@ export default {
         switch(item.type) {
             case 'columns': {
                 return (
-                    <Columns key={item.id} area={item.props.area} single={item.props.single}>
+                    <Columns key={item.id} single={item.props.single} {...item.props}>
                         {this.map(item.children)}
                     </Columns>
                 );
             }
             case 'content': {
                 return (
-                    <Content key={item.id} area={item.props.area} content={item.data} />
+                    <Content key={item.id} content={item.data} {...item.props} />
                 );
             }
             case 'skills': {
                 return (
-                    <Skills key={item.id} area={item.props.area} skills={item.data} />
+                    <Skills key={item.id} skills={item.data} {...item.props} />
                 );
             }
             case 'experience': {
                 return (
-                    <Experience key={item.id} area={item.props.area} items={item.data} />
+                    <Experience key={item.id} items={item.data} {...item.props} />
                 );
             }
         }
