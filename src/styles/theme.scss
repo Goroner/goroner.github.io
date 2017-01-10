@@ -1,15 +1,6 @@
 @import "utils/mixins";
-@import "theme/xsmall/main";
-
-@include breakpoint(480) {
-	@import "theme/small/main";
-}
+@import "theme/mobile/main";
 
 @include breakpoint(768) {
-	@import "theme/medium/main";
+	@import "theme/desktop/main";
 }
-
-@include breakpoint(1140) {
-	@import "theme/large/main";
-}
-

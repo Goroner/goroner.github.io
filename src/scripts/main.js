@@ -1,3 +1,7 @@
+import '../index.html';
+import '../styles/theme.scss';
+import '../styles/main.scss';
+
 import React from 'react';
 import { render } from 'react-dom';
 import Spinner from './components/common/spinner';

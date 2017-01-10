@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../images/sm_avatar.jpeg';
 
 class Author extends React.Component {
     render() {

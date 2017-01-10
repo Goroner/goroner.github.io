@@ -12,6 +12,16 @@
 
 		li {
 			padding: 0 4px;
+
+			a {
+				display: inline-block;
+				vertical-align: middle;
+
+				i {
+					font-size: 25px;
+					line-height: initial;
+				}
+			}
 		}
 	}
 

@@ -1,15 +1,7 @@
 @import "utils/mixins";
 @import "utils/normalize";
-@import "xsmall/main";
-
-@include breakpoint(480) {
-	@import "small/main";
-}
+@import "mobile/main";
 
 @include breakpoint(768) {
-	@import "medium/main";
-}
-
-@include breakpoint(1140) {
-	@import "large/main";
+	@import "desktop/main";
 }
