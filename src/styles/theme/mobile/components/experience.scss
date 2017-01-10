@@ -3,7 +3,7 @@
         border-bottom-color: #ccc;
     }
 
-    @include element('company') {
+    @include element('sub') {
         color: #888;
     }
 
