@@ -4,9 +4,6 @@ build:
   steps:
     - npm-install
     - script:
-        name: running gulp default task
-        code: ./node_modules/.bin/gulp
-    - script:
         name: running webpack
         code: ./node_modules/.bin/webpack
 
