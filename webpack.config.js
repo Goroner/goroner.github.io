@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/bundle.js',
@@ -18,6 +19,10 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Custom template',
+      template: './src/index.hbs'
     })
   ],
   module: {
@@ -51,8 +56,8 @@ module.exports = {
         loader: 'file?name=/styles/fonts/[name].[ext]'
       },
       {
-        test: /\.html$/,
-        loader: 'file?name=[name].[ext]'
+        test: /\.hbs$/,
+        loader: 'handlebars'
       }
     ]
   },
