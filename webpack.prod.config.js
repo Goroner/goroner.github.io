@@ -55,10 +55,5 @@ module.exports = {
         loader: 'file?name=[name].[ext]'
       }
     ]
-  },
-  devServer: {
-    contentBase: "./dist",
-    inline: true
-  },
-  devtool: 'source-map'
+  }
 };

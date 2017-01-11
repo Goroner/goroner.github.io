@@ -1,6 +1,0 @@
-@import "utils/mixins";
-@import "theme/mobile/main";
-
-@include breakpoint(768) {
-	@import "theme/desktop/main";
-}

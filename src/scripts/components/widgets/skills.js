@@ -1,8 +1,8 @@
 import Widget from './base';
 
 class Skills extends Widget {
-    constructor() {
-        super();
+    constructor(props) {
+        super('skills', props);
         this.icon = 'tasks';
         this.title = 'Skills'
     }
@@ -16,13 +16,13 @@ class Skills extends Widget {
     _renderSkills() {
         return this.props.skills.map(skill => {
             var levelBarStyle = {
-                width: skill.level + '%'
+                width: `${skill.level}%`
             };
 
             return (
                 <li key={skill.id}>
                     <div className="level-bar">
-                        <div className={'level-bar__indicator' + (skill.level === 100 ? ' level-bar__indicator--full' : '')} style={levelBarStyle}>
+                        <div className={`level-bar__indicator ${skill.level === 100 ? 'level-bar__indicator--full' : ''}`} style={levelBarStyle}>
                             <label>{skill.name}</label>
                         </div>
                     </div>

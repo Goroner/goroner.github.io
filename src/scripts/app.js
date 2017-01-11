@@ -1,7 +1,3 @@
-import '../index.html';
-import '../styles/theme.scss';
-import '../styles/main.scss';
-
 import React from 'react';
 import { render } from 'react-dom';
 import Spinner from './components/common/spinner';
@@ -11,34 +7,33 @@ import Footer from './components/page/footer';
 import Columns from './components/containers/columns';
 import itemStore from './stores/impl/item';
 
-class Main extends React.Component {
+class App extends React.Component {
     render() {
         var main;
 
-         if (this.state) {
+        if (this.state) {
             main = <Columns single="true">{this.state.items}</Columns>;
         } else {
-            main = <Spinner/>;
+            main = <Spinner />;
         }
 
         return (
             <div id="app">
                 <div className="global-search">
-                    <Search/>
+                    <Search />
                 </div>
                 <div className="page">
                     <div className="page__left">
                         <aside>
-                            <Author/>
+                            <Author />
                         </aside>
                     </div>
-                        
                     <div className="page__right">
                         <main>{main}</main>
                     </div>
                 </div>
                 <footer id="footer">
-                    <Footer/>
+                    <Footer />
                 </footer>
             </div>
         );
@@ -59,4 +54,4 @@ class Main extends React.Component {
     }
 }
 
-render(<Main/>, document.getElementById('app'));
+render(<App />, document.getElementById('app'));

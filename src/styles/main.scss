@@ -1,7 +1,9 @@
 @import "utils/mixins";
 @import "utils/normalize";
 @import "mobile/main";
+@import "theme/mobile/main";
 
 @include breakpoint(768) {
 	@import "desktop/main";
+	@import "theme/desktop/main";
 }

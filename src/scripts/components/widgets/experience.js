@@ -1,8 +1,8 @@
 import Widget from './base';
 
 class Experience extends Widget {
-    constructor() {
-        super();
+    constructor(props) {
+        super('experience', props);
         this.title = 'Experience';
         this.icon = 'suitcase';
     }
