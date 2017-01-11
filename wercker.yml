@@ -4,8 +4,8 @@ build:
   steps:
     - npm-install
     - script:
-        name: running webpack
-        code: ./node_modules/.bin/webpack
+        name: running build
+        code: npm run build 
 
 deploy:
   steps:
