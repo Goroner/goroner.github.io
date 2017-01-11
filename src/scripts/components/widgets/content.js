@@ -2,6 +2,10 @@ import Widget from './base';
 var ReactMarkdown = require('react-markdown');
 
 class Content extends Widget {
+    constructor(props) {
+        super('content', props);
+    }
+    
     render () {
         if (this.props.type === 'md') {
             return super.render(

@@ -1,8 +1,9 @@
 import React from 'react';
 
 class Container extends React.Component {
-    constructor(props) {
+    constructor(name, props) {
         super(props);
+        this.itemName = name;
 
         this.state = {
             areas: []
@@ -12,7 +13,7 @@ class Container extends React.Component {
     }
 
     render(body) {
-        return <div className={'container ' + this.constructor.name.toLowerCase()}>{body}</div>;
+        return <div className={`container ${this.itemName}`}>{body}</div>;
     }
 
     eachArea(wrapper) {
