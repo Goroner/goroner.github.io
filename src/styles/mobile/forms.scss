@@ -1,0 +1,36 @@
+input,
+select,
+textarea {
+    border-width: 1px;
+    border-style: solid; 
+    padding: 5px;
+    outline: none;
+}
+
+.form-control {
+    margin-bottom: 20px;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+
+    &.link {
+        border: 0;
+    }
+}

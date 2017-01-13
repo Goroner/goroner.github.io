@@ -4,7 +4,7 @@ class Experience extends Widget {
     constructor(props) {
         super('experience', props);
         this.title = 'Experience';
-        this.icon = 'suitcase';
+        this.icon = 'briefcase';
     }
 
     render() {
