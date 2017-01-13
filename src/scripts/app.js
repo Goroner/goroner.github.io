@@ -4,6 +4,7 @@ import Spinner from './components/common/spinner';
 import Search from './components/page/search';
 import Author from './components/page/author';
 import Footer from './components/page/footer';
+import Contact from './components/page/contact';
 import Columns from './components/containers/columns';
 import itemStore from './stores/impl/item';
 
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <footer id="footer">
                     <Footer />
                 </footer>
+                <Contact />
             </div>
         );
     }

@@ -1,0 +1,25 @@
+input,
+select,
+textarea {
+    border-color: #e6e6e6;
+    background: #fff;
+    color: #444;
+}
+
+.form-control {
+    label {
+        color: #666;
+    }
+}
+
+button {
+    &.primary {
+        background: $color-primary;
+        border-color: darken($color-primary, 5%);
+        color: #fff;
+    }
+
+    &.link {
+        background: transparent;
+    }
+}

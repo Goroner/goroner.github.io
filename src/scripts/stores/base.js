@@ -42,8 +42,10 @@ class BaseStore extends EventEmitter {
     }
 
     _handleAction(action) {
-        this.listenersMap[action.type].forEach(handler => {
-            this[handler](data);
+        var listeners = this.listenersMap[action.type] || [];
+
+        listeners.forEach(handler => {
+            this[handler](action.data);
         });
     }
 }

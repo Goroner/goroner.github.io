@@ -1,0 +1,22 @@
+.contact {
+    @include element('trigger') {
+        position: fixed;
+        left: 20px;
+        bottom: 30px;
+        padding: 20px;
+        width: 60px;
+        border-radius: 50px;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        outline: none;
+        z-index: 10;
+        opacity: 0;
+        transition: opacity .6s;
+
+        &.visible, &:hover {
+            opacity: 1;
+        }
+    }
+}
