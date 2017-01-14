@@ -17,6 +17,10 @@ button {
         background: $color-primary;
         border-color: darken($color-primary, 5%);
         color: #fff;
+
+        &:hover {
+            background: darken($color-primary, 5%);
+        }
     }
 
     &.link {

@@ -17,9 +17,8 @@ class EmailStore extends BaseStore {
             crossDomain: true
         }).then(() => {
             this.emit('change');
-        }).fail((e) => {
-            // TODO: Figure out how to handle error states
-            console.log(e);
+        }).fail(e => {
+            this.emit('error', e)
         });
     }
 }
