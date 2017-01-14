@@ -18,5 +18,9 @@
         &.visible, &:hover {
             opacity: 1;
         }
+
+        &.remove {
+            display: none;
+        }
     }
 }

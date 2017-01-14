@@ -22,8 +22,16 @@ class BaseStore extends EventEmitter {
         this.on('change', listener);
     }
 
+    addErrorListener(listener) {
+        this.on('error', listener);
+    }
+
     removeChangeListener(listener) {
         this.removeListener('change', listener);
+    }
+
+    removeErrorListener(listener) {
+        this.removeListener('error', listener);
     }
 
     _registerActionListeners(config) {

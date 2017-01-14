@@ -44,6 +44,7 @@ class Modal extends React.Component {
         this.state.open = false;
         this.setState(this.state);
         document.body.style.overflow = null;
+        this.props.onClose();
     }
 }
 

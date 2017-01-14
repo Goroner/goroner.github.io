@@ -2,24 +2,27 @@ input,
 select,
 textarea {
     border-width: 1px;
-    border-style: solid; 
+    border-style: solid;
     padding: 5px;
     outline: none;
 }
 
 .form-control {
     margin-bottom: 20px;
-
     label {
         font-weight: bold;
         margin-bottom: 5px;
-        display: inline-block;
+        display: block;
     }
-
     input,
     select,
     textarea {
         width: 100%;
+    }
+    .error {
+        float: right;
+        color: red;
+        font-weight: normal;
     }
 }
 
@@ -29,7 +32,6 @@ button {
     border-width: 1px;
     border-style: solid;
     outline: none;
-
     &.link {
         border: 0;
     }
