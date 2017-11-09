@@ -1,8 +1,24 @@
-import * as React from 'react';
-import '../../styles/main';
+import '../../styles/components/app';
 
-export default class App extends React.Component<any, any> {
+import * as React from 'react';
+import { connect } from 'react-redux';
+
+type AppStateProps = {
+    test: string;
+};
+
+type AppProps = AppStateProps;
+
+class App extends React.Component<AppProps, any> {
     render() {
-        return <h1>App</h1>;
+        return <h1>App {this.props.test}</h1>;
     }
 }
+
+function mapStateToProps(state: AppState): AppStateProps {
+    return {
+        test: state.test
+    };
+}
+
+export default connect<AppStateProps>(mapStateToProps)(App);
