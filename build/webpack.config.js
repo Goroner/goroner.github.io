@@ -12,7 +12,7 @@ const DEV_MODE = process.env.NODE_ENV === 'development';
 
 const config = {
     entry: {
-        main: path.join(__dirname, '../src/scripts/main.tsx')
+        index: path.join(__dirname, '../src/scripts/index.tsx')
     },
     output: {
         path: path.join(__dirname, '../dist'),

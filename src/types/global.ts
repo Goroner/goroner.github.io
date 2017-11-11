@@ -13,7 +13,15 @@ declare interface AppConfig {
 }
 
 declare interface AppState {
-    test: string
+    items: {
+        synced: boolean;
+        data: Item[]
+    } 
+}
+
+declare interface Item {
+    name: string;
+    config: { [key: string]: string };
 }
 
 declare const DEV_MODE: boolean;
