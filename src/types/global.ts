@@ -21,6 +21,7 @@ declare interface AppState {
 
 declare interface Item {
     name: string;
+    type: string;
     config: { [key: string]: string };
 }
 

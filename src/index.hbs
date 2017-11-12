@@ -7,13 +7,17 @@
 </head>
 
 <body>
-    <div class="app"></div>
-
-    {{#if htmlWebpackPlugin.options.DEV_MODE}}
-    <footer>
-        App version {{htmlWebpackPlugin.options.version}}
-    </footer>
-    {{/if}}
+    <main>
+        <div class="left">
+            {{> author}}
+        </div>
+        <div class="right">
+            <div class="react-root">
+                <h1>SPINNING</h1>
+            </div>
+        </div>
+    </main>
+    {{> footer}}
 </body>
 
 </html>

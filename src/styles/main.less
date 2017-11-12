@@ -1,3 +1,30 @@
-h1 {
-    font-size: 12px;
+@import "./partials/footer";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+main {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 3;
+    }
 }

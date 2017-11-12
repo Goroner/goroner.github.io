@@ -1,8 +1,26 @@
 import '../../styles/components/app';
 import * as React from 'react';
+import { connect } from 'react-redux';
+import Items from './items';
 
-const App = () => {
-    return <h1>App</h1>;
+type AppProps = {
+    items: Item[];
+};
+
+class App extends React.Component<AppProps> {
+    render() {
+        return (
+            <div className="app">
+                <Items items={this.props.items} />
+            </div>
+        );
+    }
 }
 
-export default App;
+function mapStateToProps(state: AppState): AppProps {
+    return {
+        items: state.items.data
+    };
+}
+
+export default connect<AppProps>(mapStateToProps)(App);

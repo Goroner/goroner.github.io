@@ -43,7 +43,10 @@ const config = {
             },
             {
                 test: /\.hbs$/,
-                loader: "handlebars-loader"
+                loader: "handlebars-loader",
+                options: {
+                    partialDirs: path.join(__dirname, '../src/partials')
+                }
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,

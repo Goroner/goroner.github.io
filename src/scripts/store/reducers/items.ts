@@ -10,7 +10,7 @@ const initialState = {
 export default (state = initialState, action: AppAction) => {
     switch (action.type) {
         case LOAD_ITEMS:
-            return { ...state, items: action.payload };
+            return { ...state, data: action.payload };
         case ITEMS_SYNCED: {
             return {...state, synced: action.payload };
         }

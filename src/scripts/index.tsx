@@ -24,4 +24,4 @@ if (DEV_MODE) {
 
 store.dispatch(loadItems());
 
-render(<Provider store={store}><App /></Provider>, document.querySelector('.app'));
+render(<Provider store={store}><App /></Provider>, document.querySelector('.react-root'));
