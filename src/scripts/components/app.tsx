@@ -1,26 +1,28 @@
 import '../../styles/components/app';
 import * as React from 'react';
 import { connect } from 'react-redux';
-import Items from './items';
+import Skills from './skills';
+import Projects from './projects';
 
-type AppProps = {
-    items: Item[];
-};
-
-class App extends React.Component<AppProps> {
+class App extends React.Component<AppState, any> {
     render() {
         return (
             <div className="app">
-                <Items items={this.props.items} />
+                <div className="row">
+                    <div className="col">
+                        <Skills skills={this.props.skills} />
+                    </div>
+                    <div className="col">
+                        <Projects projects={this.props.projects} />
+                    </div>
+                </div>
             </div>
         );
     }
 }
 
-function mapStateToProps(state: AppState): AppProps {
-    return {
-        items: state.items.data
-    };
+function mapStateToProps(state: AppState): AppState {
+    return state;
 }
 
-export default connect<AppProps>(mapStateToProps)(App);
+export default connect<AppState>(mapStateToProps)(App);

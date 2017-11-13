@@ -1,4 +1,8 @@
+@import "./variables";
+@import "./fonts";
+@import "./partials/spinner";
 @import "./partials/footer";
+@import "./widgets";
 
 html, body {
     margin: 0;
@@ -18,13 +22,45 @@ main {
     max-width: 1170px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    padding: 20px 0;
     
     .left {
+        padding: 0 15px;
         flex: 1;
     }
 
     .right {
+        padding: 0 15px;
         flex: 3;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 920px) {
+    main {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        padding: 0 20px;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .col {
+        padding: 0 15px;
     }
 }

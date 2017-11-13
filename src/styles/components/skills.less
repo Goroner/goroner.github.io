@@ -1,0 +1,22 @@
+@import "../variables";
+
+.skill {
+    border: 1px solid darken(@primary-color, 5%);
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+    &__level {
+        border-radius: 3px;
+
+        & > div {
+            padding: 3px 10px;
+            background-color: @primary-color;
+            height: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+    &__name {
+        color: #ffffff;
+    }
+}

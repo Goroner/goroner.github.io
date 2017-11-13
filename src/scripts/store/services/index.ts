@@ -1,9 +1,13 @@
+import { database } from 'firebase';
 import { initializeApp } from 'firebase';
-import ItemService from './items';
+import SkillsService from './skills';
+import ProjectsService from './projects';
 
-declare const appConfig: AppConfig;
-initializeApp(appConfig.firebase);
 
-const itemService = new ItemService();
+initializeApp(APP_CONFIG.firebase);
 
-export { itemService };
+const db = database();
+const skillsService = new SkillsService(db.ref('skills'));
+const projectsService = new ProjectsService(db.ref('projects'));
+
+export { skillsService, projectsService };
