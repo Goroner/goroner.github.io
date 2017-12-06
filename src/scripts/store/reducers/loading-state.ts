@@ -1,5 +1,4 @@
-import { AppAction, AppLoadingAction } from '../../../types/actions';
-
+import { AppAction } from '../../../types/actions';
 import { LOADING_STATE } from '../actions/loading-state';
 
 const initialState = {
@@ -7,11 +6,22 @@ const initialState = {
     projects: 'NOT_LOADED'
 };
 
-export default (state = initialState, action: AppLoadingAction) => {
-    switch (action.type) {
-        case LOADING_STATE:
-            return { ...state, [action.prop]: action.loadingState }
-    };
+/**
+ * Checks if the action contains all the necessary data for the reducer to be able to create the next state
+ * 
+ * @param action
+ */
+function actionCanBeReduced(action: AppAction) {
+    return action && action.type && action.payload && action.payload.prop && action.payload.loadingState;
+}
+
+export default (state = initialState, action: AppAction) => {
+    if (actionCanBeReduced(action)) {
+        switch (action.type) {
+            case LOADING_STATE:
+                return { ...state, [action.payload.prop]: action.payload.loadingState }
+        };
+    }
 
     return state;
 }

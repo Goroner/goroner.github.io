@@ -5,8 +5,6 @@
         "jsx": "react",
         "removeComments": true,
         "declaration": false,
-        "rootDir": "src",
-        "outDir": "",
         "moduleResolution": "node",
         "baseUrl": "./src",
         "lib": [
