@@ -1,6 +1,8 @@
 import DbRef from '../../utils/db';
 import ProjectsService from '../../../src/scripts/store/services/projects';
 
+const date = new Date();
+
 describe('Projects Service', () => {
     function prepareTestDb() {
         return new DbRef([
@@ -8,19 +10,19 @@ describe('Projects Service', () => {
                 name: 'Project X',
                 description: 'Desc One',
                 technologies: ['js', 'css', 'html'],
-                startDate: Date.now()
+                startDate: date
             },
             {
                 name: 'Project Y',
                 description: 'Desc Two',
                 technologies: ['js', 'css', 'html'],
-                startDate: new Date()
+                startDate: date
             },
             {
                 name: 'Project Z',
                 description: 'Desc Three',
                 technologies: ['js', 'css', 'html'],
-                startDate: new Date()
+                startDate: date
             }
         ]);
     }
@@ -35,19 +37,19 @@ describe('Projects Service', () => {
                     name: 'Project X',
                     description: 'Desc One',
                     technologies: ['js', 'css', 'html'],
-                    startDate: Date.now()
+                    startDate: date
                 },
                 {
                     name: 'Project Y',
                     description: 'Desc Two',
                     technologies: ['js', 'css', 'html'],
-                    startDate: new Date()
+                    startDate: date
                 },
                 {
                     name: 'Project Z',
                     description: 'Desc Three',
                     technologies: ['js', 'css', 'html'],
-                    startDate: new Date()
+                    startDate: date
                 }
             ] as Project[];
 

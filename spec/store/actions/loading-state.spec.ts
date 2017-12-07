@@ -1,7 +1,6 @@
 import { loadingStart, loadingFinish, LOADING_STATE } from '../../../src/scripts/store/actions/loading-state';
-import { access } from 'fs';
 
-describe('Loading State Action Creator', () => {
+describe('Action Creator: Loading State', () => {
     describe('Action: loadingStart', () => {
         it('should create loading start action for specific prop', () => {
             const action = loadingStart('test');

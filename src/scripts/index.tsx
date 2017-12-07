@@ -7,6 +7,7 @@ import thunkMiddleware from 'redux-thunk'
 import { Provider } from 'react-redux';
 import App from './components/app';
 import reducers from './store/reducers';
+import { projectsService, skillsService } from './store/services';
 import { loadSkills } from './store/actions/skills';
 import { loadProjects } from './store/actions/projects';
 
@@ -23,7 +24,7 @@ if (DEV_MODE) {
     );
 }
 
-store.dispatch(loadSkills());
-store.dispatch(loadProjects());
+store.dispatch(loadSkills(skillsService));
+store.dispatch(loadProjects(projectsService));
 
 render(<Provider store={store}><App /></Provider>, document.querySelector('.react-root'));
