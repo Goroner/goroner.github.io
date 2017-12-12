@@ -16,6 +16,7 @@ html {
 body {
     min-height: 100%;
     position: relative;
+    padding-bottom: 50px;
 }
 
 main {
@@ -33,7 +34,8 @@ main {
         padding: 0 15px;
         flex: 1;
         background: #efefef;
-        border: 1px solid #e6e6e6;
+        border: 1px solid #dedcdc;
+        box-shadow: 0px 0px 5px #ddd;
     }
 
     .right {
@@ -50,6 +52,15 @@ main {
 .col {
     flex: 1;
     padding: 0 10px;
+}
+
+a {
+    color: @primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken(@primary-color, 5%);
+    }
 }
 
 @media screen and (min-width: 920px) {

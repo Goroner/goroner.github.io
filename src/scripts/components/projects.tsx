@@ -18,7 +18,7 @@ const renderProjects = (projects: Project[]) => {
 const renderProject = (project: Project, index: number) => {
     return (
         <div key={index} className="project">
-            <h2 className="project__name">{project.name}</h2>
+            <h3 className="project__name">{project.name}</h3>
             <p className="project__description">{project.description}</p>
         </div>
     );

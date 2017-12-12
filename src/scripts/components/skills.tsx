@@ -30,7 +30,7 @@ const renderSkill = (skill: Skill, index: number) => {
 export default ({ skills }: SkillsProps) => {
     return (
         <div className="widget">
-            <h2 className="widget__title">Skills</h2>
+            <h3 className="widget__title">Skills</h3>
             <div className="widget__body">
                 {renderSkills(skills)}
             </div>

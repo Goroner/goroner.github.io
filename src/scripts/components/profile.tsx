@@ -6,18 +6,24 @@ export default () => {
         <div className="widget profile">
             <img className="profile__avatar" src="https://placebear.com/200/200" />
             <h2 className="widget__title">Stefan Mitev</h2>
-            <ul>
+            <ul className="profile__details">
                 <li>
-                    Phone Icon: (+389) (0) 70 289 611 
+                    <span className="profile__details-item">
+                        Phone:
+                    </span>
+                    <a href="tel:+38970289611">(+389) (0) 70 289 611</a>
                 </li>
                 <li>
-                    Mail Icon: stefomitev@gmail.com
+                    <span className="profile__details-item">
+                        Email:
+                    </span>
+                    <a href="mailto:stefomitev@gmail.com">stefomitev@gmail.com</a>
                 </li>
                 <li>
-                    Address Icon: http://mitevs.github.io
-                </li>
-                <li>
-                    DOB Icon: 9th of May, 1990
+                    <span className="profile__details-item">
+                        Web:
+                    </span>
+                    <a href="http://mitevs.github.io">http://mitevs.github.io</a>
                 </li>
             </ul>
         </div>
