@@ -21,14 +21,19 @@ body {
 main {
     max-width: 1170px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     padding: 20px 0;
-    
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+
     .left {
         padding: 0 15px;
         flex: 1;
+        background: #efefef;
+        border: 1px solid #e6e6e6;
     }
 
     .right {
@@ -48,7 +53,7 @@ main {
 }
 
 @media screen and (min-width: 920px) {
-    main {
+    .app {
         flex-direction: row;
     }
 

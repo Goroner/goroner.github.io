@@ -27,4 +27,4 @@ if (DEV_MODE) {
 store.dispatch(loadSkills(skillsService));
 store.dispatch(loadProjects(projectsService));
 
-render(<Provider store={store}><App /></Provider>, document.querySelector('.react-root'));
+render(<Provider store={store}><App /></Provider>, document.querySelector('main'));

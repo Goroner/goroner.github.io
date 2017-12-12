@@ -87,7 +87,7 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 const definePlugin = new webpack.DefinePlugin({
-    appConfig: JSON.stringify(configJson),
+    APP_CONFIG: JSON.stringify(configJson),
     DEV_MODE: DEV_MODE,
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
 });
