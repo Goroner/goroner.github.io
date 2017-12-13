@@ -5,7 +5,6 @@ export default () => {
     return (
         <div className="widget profile">
             <img className="profile__avatar" src="https://placebear.com/200/200" />
-            <h2 className="widget__title">Stefan Mitev</h2>
             <ul className="profile__details">
                 <li>
                     <span className="profile__details-item">

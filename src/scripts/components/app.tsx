@@ -2,6 +2,7 @@ import '../../styles/components/app';
 import * as React from 'react';
 import { connect } from 'react-redux';
 
+import Header from './header';
 import Profile from './profile';
 import About from './about';
 import Skills from './skills';
@@ -11,6 +12,16 @@ import Projects from './projects';
 import Education from './education';
 import Courses from './courses';
 
+const employments = [
+    {
+        title: 'Junior Software Developer',
+        company: '6PM plc',
+        from: new Date(),
+        to: new Date(),
+        description: ''
+    }
+]
+
 class App extends React.Component<AppState, any> {
     render() {
         return (
@@ -19,10 +30,11 @@ class App extends React.Component<AppState, any> {
                     <Profile />
                     <About />
                     <Skills skills={this.props.skills} />
-                    <Interests />
+                    <Interests interests={['guitar', 'travel', 'games', 'bikes']} />
                 </div>
                 <div className="right">
-                    <Employments />
+                    <Header />
+                    <Employments employments={employments} />
                     <Projects projects={this.props.projects} />
 
                     <div className="row">

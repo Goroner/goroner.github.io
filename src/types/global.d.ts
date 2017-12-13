@@ -37,5 +37,13 @@ declare interface Project {
     url?: URL;
 }
 
+declare interface Employment {
+    title: string;
+    company: string;
+    from: Date;
+    to: Date;
+    description: string;
+}
+
 declare const DEV_MODE: boolean;
 declare const APP_CONFIG: AppConfig;
