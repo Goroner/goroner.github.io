@@ -19,6 +19,13 @@ const employments = [
         from: new Date(),
         to: new Date(),
         description: ''
+    },
+    {
+        title: 'Junior Software Developer',
+        company: '6PM plc',
+        from: new Date(),
+        to: new Date(),
+        description: ''
     }
 ]
 
@@ -35,7 +42,6 @@ class App extends React.Component<AppState, any> {
                 <div className="right">
                     <Header />
                     <Employments employments={employments} />
-                    <Projects projects={this.props.projects} />
 
                     <div className="row">
                         <div className="col">

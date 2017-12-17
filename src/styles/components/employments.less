@@ -1,0 +1,36 @@
+.employments {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.employment {
+    display: flex;
+    margin-bottom: 30px;
+
+    section {
+        flex: 1;
+    }
+
+    section + section {
+        flex: 3;
+    }
+
+    &__company-name {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    &__time {
+        font-size: 0.85em;
+        color: #777;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__description {
+        margin: 0;
+    }
+}

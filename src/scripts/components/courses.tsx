@@ -3,7 +3,7 @@ import * as React from 'react';
 export default () => {
     return (
         <div className="widget">
-            <h3 className="widget__name">Courses</h3>
+            <h2 className="widget__title">Courses</h2>
         </div>
     );
 };
