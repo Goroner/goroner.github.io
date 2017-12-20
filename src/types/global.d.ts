@@ -28,20 +28,28 @@ declare interface Skill {
     level: number;
 }
 
-declare interface Project {
+declare interface TimeEvent {
+    type: string;
+    from: Date;
+    to: Date;
+}
+
+declare interface Project extends TimeEvent {
     name: string;
     description: string;
     technologies: string[];
-    startDate: Date;
-    endDate?: Date;
     url?: URL;
 }
 
-declare interface Employment {
+declare interface Employment extends TimeEvent {
     title: string;
     company: string;
-    from: Date;
-    to: Date;
+    description: string;
+}
+
+declare interface Education extends TimeEvent {
+    title: string;
+    institution: string;
     description: string;
 }
 
