@@ -7,19 +7,16 @@ import Profile from './profile';
 import About from './about';
 import Skills from './skills';
 import Interests from './interests';
-import Projects from './projects';
-import Education from './education';
-import Courses from './courses';
 import Timeline from './timeline';
 
-const employments = [
+const experiences = [
     {
         title: 'Junior Software Developer',
         company: '6PM plc',
         from: new Date(),
         to: new Date(),
         description: '',
-        type: 'employment'
+        type: 'experience'
     },
     {
         title: 'Junior Software Developer',
@@ -27,7 +24,7 @@ const employments = [
         from: new Date(),
         to: new Date(),
         description: '',
-        type: 'employment'
+        type: 'experience'
     }
 ];
 
@@ -37,14 +34,16 @@ const educations = [
         institution: 'Ss. University Cyril and Methodius, FCSE',
         from: new Date(),
         to: new Date(),
-        description: ''
+        description: '',
+        type: 'education'
     },
     {
         title: 'Gymnasium',
         institution: 'Marie Curie',
         from: new Date(),
         to: new Date(),
-        description: ''
+        description: '',
+        type: 'education'
     }
 ];
 
@@ -75,8 +74,7 @@ class App extends React.Component<AppProps, any> {
 
 function mapStateToProps(state: AppState): AppProps {
     return {
-        // expand employments, projects, education in timeEvents
-        timeEvents: [...employments],
+        timeEvents: [...experiences, ...educations],
         skills: state.skills,
         interests: ['guitar', 'travel', 'games', 'bikes']
     };

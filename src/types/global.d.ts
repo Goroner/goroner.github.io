@@ -41,7 +41,7 @@ declare interface Project extends TimeEvent {
     url?: URL;
 }
 
-declare interface Employment extends TimeEvent {
+declare interface Experience extends TimeEvent {
     title: string;
     company: string;
     description: string;

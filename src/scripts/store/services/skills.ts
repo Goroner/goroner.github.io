@@ -12,9 +12,15 @@ export default class SkillsService {
             const skillsMap = snapshot.val() || {};
 
             const skills = Object.keys(skillsMap).reduce((skillsArr: Skill[], skillName: string) => {
+                let level = skillsMap[skillName];
+                
+                if (level > 100) {
+                    level = 100;
+                }
+
                 skillsArr.push({
                     name: skillName,
-                    level: skillsMap[skillName]
+                    level
                 });
 
                 return skillsArr;
