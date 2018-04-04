@@ -1,0 +1,10 @@
+{
+    "firebase": {
+        "apiKey": "AIzaSyCD-c4qeBhGlnBua6txIVmNAIrz8lOn1hQ",
+        "authDomain": "mitevs-github-io-p1.firebaseapp.com",
+        "databaseURL": "https://mitevs-github-io-p1.firebaseio.com",
+        "projectId": "mitevs-github-io-p1",
+        "storageBucket": "mitevs-github-io-p1.appspot.com",
+        "messagingSenderId": "317237273118"
+    }
+}

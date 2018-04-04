@@ -1,7 +1,0 @@
-.contact {
-    @include element('trigger') {
-        background: $color-primary;
-        border-color: darken($color-primary, 5%);
-        color: white;
-    }
-}

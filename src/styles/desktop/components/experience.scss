@@ -1,9 +1,0 @@
-.experience {
-    @include element('details') {
-        li {
-            display: inline-block;
-            width: 50%;
-            margin: 0;
-        }
-    }
-}

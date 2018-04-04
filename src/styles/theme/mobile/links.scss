@@ -1,7 +1,0 @@
-a {
-	color: $color-primary;
-
-	&:hover, &.active {
-		color: darken($color-primary, 10%);
-	}
-}

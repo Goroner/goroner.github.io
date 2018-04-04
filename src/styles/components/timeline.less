@@ -1,0 +1,66 @@
+@import "../variables";
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__event-groups {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__event-group-name {
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        margin: 50px 0 20px;
+        background: @primary-color;
+        border-bottom: 1px solid darken(@primary-color, 2%);
+        color: #ffffff;
+        padding: 10px;
+        i {
+            float: right;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+    &__event {
+        display: flex;
+        margin-bottom: 30px;
+        section {
+            flex: 1;
+            position: relative;
+            padding-left: 25px;
+        }
+        section+section {
+            flex: 3;
+        }
+        &-time {
+            font-size: 0.85em;
+            color: #777;
+            &:before {
+                content: "\E075";
+                font-size: 1.2em;
+                font-family: simple-line-icons;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                color: #8c8c8c;
+                position: absolute;
+                z-index: 10;
+                left: 0;
+            }
+            &:after {
+                content: "";
+                border-left: 1px dashed #c3c3c3;
+                height: 100%;
+                display: inline-block;
+                position: absolute;
+                left: 7px;
+                top: 25px;
+            }
+        }
+    }
+}

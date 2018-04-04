@@ -1,0 +1,85 @@
+@import "./variables";
+@import "./fonts";
+@import "./partials/spinner";
+@import "./partials/footer";
+@import "./widgets";
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+
+    .left {
+        padding: 0 25px 10px;
+        flex: 1;
+        background: #efefef;
+        border: 1px solid #dedcdc;
+        box-shadow: 0px 0px 5px #ddd;
+    }
+
+    .right {
+        padding: 0 25px;
+        flex: 3;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+a {
+    color: @primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken(@primary-color, 5%);
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .app {
+        flex-direction: row;
+    }
+
+    .left, .right {
+        padding: 0 20px;
+    }
+
+    .row {
+        flex-direction: row;
+        margin: 0 -15px;
+    }
+
+    .col {
+        padding: 0 15px;
+    }
+}
